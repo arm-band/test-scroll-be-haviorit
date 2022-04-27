@@ -1,0 +1,41 @@
+:root {
+    --navbar-height: 56px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: var(--navbar-height);
+    background-color: #fff;
+}
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none outside;
+}
+/*.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}*/
+.main {
+    margin-top: var(--navbar-height);
+}
+.ssnap-mt {
+    scroll-margin-top: var(--navbar-height);
+}
+.footer {
+    width: 100%;
+    text-align: center;
+}
